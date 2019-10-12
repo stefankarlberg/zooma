@@ -17,30 +17,32 @@ import {
 
 const Menu = (props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSwedish, setIsSwedish] = useState(true);
 
   const toggle = () => setIsOpen(!isOpen);
+  const language = () => setIsSwedish(!isSwedish)
 
   return (
     <div>
 
       <Navbar color="dark" dark expand="md" h-64>
-        <NavbarBrand href="/">COMPANY</NavbarBrand>
+        <NavbarBrand className="nav-logo" href="/">COMPANY</NavbarBrand>
         
        
 
            {/* Mobile */}   
          
           <NavbarToggler onClick={toggle} className="ml-auto"/>
-            <Collapse isOpen={isOpen} navbar>
+            <Collapse isOpen={isOpen} className="nav-collapse" navbar>
               <Nav className="ml-auto mr-auto d-md-none" navbar>
                 <NavItem>
-                  <NavLink href="http://www.zooma.se">Overview</NavLink>
+                  <NavLink className="nav-menu-item" href="http://www.zooma.se">Overview</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="http://www.zooma.se">Testamonials</NavLink>
+                  <NavLink className="nav-menu-item" href="http://www.zooma.se">Testamonials</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="http://www.zooma.se">Find us</NavLink>
+                  <NavLink className="nav-menu-item" href="http://www.zooma.se">Find us</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
@@ -50,7 +52,7 @@ const Menu = (props) => {
           {/* Desktop */}   
 
           <Row className="d-none d-lg-flex nav-menu-lg-full-width">
-            <Col lg="4">.col-3</Col>
+            <Col lg="4"></Col>
             <Col lg="4">
               <Nav className="ml-auto mr-auto d-md-none d-lg-flex" navbar>
                 <NavItem>
@@ -64,7 +66,7 @@ const Menu = (props) => {
                 </NavItem>
               </Nav>
             </Col>
-            <Col lg="4">.col-3</Col>
+            <Col lg="4"></Col>
           </Row>
          
         </div>
@@ -73,16 +75,16 @@ const Menu = (props) => {
         
         <Nav className="d-none d-md-flex ml-auto" navbar>
           <NavItem>
-            <NavLink href="http://www.zooma.se">EN</NavLink>
+            <NavLink className="nav-menu-item" href="http://www.zooma.se">EN</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#"> / </NavLink>
+            <NavLink className="nav-menu-item" href="#"> / </NavLink>
           </NavItem>
           <NavItem className="mr-4"> 
-            <NavLink className="nav-link-contact" href="http://www.zooma.se">SE</NavLink>
+            <NavLink className="nav-menu-item" href="#" onClick={language}>SE</NavLink>
           </NavItem>
-          <NavItem className="bg-warning text-dark">
-            <NavLink href="http://www.zooma.se">CONTACT</NavLink>
+          <NavItem>
+            <NavLink className="nav-menu-item nav-menu-item-contact" href="#">KONTAKT</NavLink>
           </NavItem>
         </Nav>
 
@@ -94,13 +96,13 @@ const Menu = (props) => {
       <div className="container">
             <Nav className="ml-auto mr-auto" navbar>
               <NavItem>
-                <NavLink href="http://www.zooma.se">Overview</NavLink>
+                <NavLink className="nav-menu-item" href="http://www.zooma.se">Overview</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="http://www.zooma.se">Testamonials</NavLink>
+                <NavLink className="nav-menu-item" href="http://www.zooma.se">Testamonials</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="http://www.zooma.se">Find us</NavLink>
+                <NavLink className="nav-menu-item" href="http://www.zooma.se">Find us</NavLink>
               </NavItem>
             </Nav>
       </div>

@@ -12,6 +12,18 @@ code {
     monospace;
 }
 
+.nav-logo {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px !important;
+  line-height: 56px !important;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2em;
+  color: #E5E5E5;
+}
+
 .nav-menu-center {
   position: absolute;
   left: 0;
@@ -19,9 +31,66 @@ code {
 }
 
 .nav-menu-item {
- 
+  padding: 17px 10px 17px 10px !important;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #E5E5E5;
+
+}
+
+.nav-menu-item-contact{
+background: #D28C00;
+color: #1C1C21 !important;
+padding: 17px !important;
 }
 
 .nav-menu-lg-full-width {
   width:100%;
+}
+
+.navbar-toggler {
+  border: 0px !important;
+}
+
+.navbar-toggler-icon {
+  color: rgb(208, 138, 32) !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(208,138,32)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.bg-dark {
+  background-color: #343a40e3 !important;
+}
+
+.navbar-nav a:hover { 
+  color: rgb(208, 138, 32) !important;
+}
+
+.navbar-nav .nav-menu-item-contact a:hover {
+  color: #1C1C21 !important;
+  }
+
+
+
+@media screen and (max-width: 768px) {
+  .nav-collapse {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+    margin-bottom: -8px !important;
+    border-top:1px solid #ffffff1c !important;
+    border-bottom:1px solid #ffffff1c !important;
+  }
 }
