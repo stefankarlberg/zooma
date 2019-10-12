@@ -3,12 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import Menu from './components/nav.js'
 import Header from './components/header.js'
+import Intro from './components/intro.js'
 
 function App() {
   return (
     <div className="App">
       <Menu/>
       <Header/>
+      <Intro/>
       
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
