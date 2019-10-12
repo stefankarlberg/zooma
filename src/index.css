@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
+.nav-container {
+  position: absolute;
+  width: 100%;
+  position: absolute;
+}
+
 .nav-logo {
   font-family: Lato;
   font-style: normal;
@@ -31,7 +37,7 @@ code {
 }
 
 .nav-menu-item {
-  padding: 17px 10px 17px 10px !important;
+  padding: 15px 20px 15px 20px !important;
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
@@ -43,13 +49,19 @@ code {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #E5E5E5;
+  
+
+}
+
+.nav-menu-item-lang{
+  padding: 15px 4px 15px 4px !important;
 
 }
 
 .nav-menu-item-contact{
 background: #D28C00;
 color: #1C1C21 !important;
-padding: 17px !important;
+padding: 15px !important;
 }
 
 .nav-menu-lg-full-width {
@@ -69,8 +81,11 @@ button:focus {
   outline: none !important;
 }
 
-.bg-dark {
-  background-color: #343a40e3 !important;
+
+.nav-background {
+  background-color: #1C1C21 !important;
+  height:64px;
+
 }
 
 .navbar-nav a:hover { 
@@ -80,6 +95,34 @@ button:focus {
 .navbar-nav .nav-menu-item-contact a:hover {
   color: #1C1C21 !important;
   }
+
+  .jumbotron{
+    background-image: url('bg_image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0rem !important;
+    height:720px;
+  }
+
+  .jumbotron-title {
+
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 120%;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    width: 736px;
+    text-align: left;
+    margin-top: 32%;
+
+
+  }
+
+ 
 
 
 

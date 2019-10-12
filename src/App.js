@@ -2,13 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Menu from './components/nav.js'
-import { Button } from 'reactstrap';
+import Header from './components/header.js'
 
 function App() {
   return (
     <div className="App">
       <Menu/>
-      <header className="App-header">
+      <Header/>
+      
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload1.
@@ -21,8 +23,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
-      <Button color="danger">danger</Button>{' '}
+      </header> */}
+    
     </div>
   );
 }
