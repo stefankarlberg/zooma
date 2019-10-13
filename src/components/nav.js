@@ -33,7 +33,7 @@ const Menu = (props) => {
            {/* Mobile */}   
          
           <NavbarToggler onClick={toggle} className="ml-auto"/>
-            <Collapse isOpen={isOpen} className="nav-collapse" navbar>
+            <Collapse isOpen={isOpen} className="nav-collapse nav-mob" navbar>
               <Nav className="ml-auto mr-auto d-md-none" navbar>
                 <NavItem className="nav-li-sm">
                   <NavLink className="nav-menu-item-sm" href="http://www.zooma.se">Overview</NavLink>
