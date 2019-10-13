@@ -387,15 +387,7 @@ position: absolute;
 
 .last-section-container {
   margin-top:-600px;
-}
-
-.last-section-row{
-
-}
-
-.last-section-bgimage{
-  background-color: linear-gradient(90deg, #FFC0CB 50%, rgba(11, 145, 38, 0.242) 50%) !important;
-  
+  background:#dbdbdb;
 }
 
 .last-w {
@@ -411,15 +403,25 @@ position: absolute;
 
 .last-section-text-div{
   height:600px;
-  background-color:white;
+  background-color:#dbdbdb;
   padding-top:120px;
 }
   
 
-
-
 /* Extra Small devices */
 @media (min-width: 200px) { 
+
+  .jumbotron{
+    background-image: url('bg_image.png');
+    height:345px;
+    background-position:  50% 50%;
+  }
+
+  .jumbotron-title {
+    font-size: 36px;
+    width: 80%;
+    margin-top: 38%;
+}
 
   .last-section-image{
     height:190px;
@@ -443,6 +445,18 @@ position: absolute;
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
 
+  .jumbotron {
+    height: 515px;
+    background-position: 47% 50%;
+    background-size: 210%;
+  }
+
+  .jumbotron-title {
+    font-size: 55px;
+    width: 83%;
+    margin-top: 38%;
+  }
+
   .last-section-image{
     height:190px;
   }
@@ -462,6 +476,20 @@ position: absolute;
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  .jumbotron {
+    background-image: url(/static/media/bg_image.6fa566ba.png);
+    height: 912px;
+    background-position: 68% 17%;
+    background-size: cover;
+}
+
+  .jumbotron-title {
+    font-size: 62px;
+    width: 100%;
+    margin-top: 70%;
+}
+
   .section_top_padding {
     padding-top: 70px !important;
   }
@@ -499,9 +527,10 @@ position: absolute;
     height:380px;
   }
     
+
   .last-section-fill{
-    display:none;
-  }
+    margin-top:0px;
+    }
   
   .last-section-container {
     margin-top:0px;
@@ -517,6 +546,19 @@ position: absolute;
 
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+
+  .jumbotron {
+    background-image: url(/static/media/bg_image.6fa566ba.png);
+    height: 720px;
+    background-position: 68% 17%;
+    background-size: cover;
+}
+
+.jumbotron-title {
+  font-size: 72px;
+  width: 84%;
+  margin-top: 33%;
+}
 
   h3.blog {
     margin-top: 30px;

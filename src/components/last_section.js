@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container } from 'reactstrap';
 import serious from '../Serious-womanBW.jpg';
-import trekant from '../trekanten.svg';
-import fill from '../fill.svg';
+import trekant from '../trekanten2.svg';
+import fill from '../fill2.svg';
 
 const LastSection = (props) => {
   return (
