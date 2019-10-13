@@ -4,6 +4,7 @@ import './App.css';
 import Menu from './components/nav.js'
 import Header from './components/header.js'
 import Intro from './components/intro.js'
+import Blog from './components/blog.js'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Menu/>
       <Header/>
       <Intro/>
+      <Blog/>
       
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 const Intro = (props) => {
   return (
     <Container>
-      <Row className="mt-md-5 pt-md-5">
+      <Row className="mt-md-5 pt-md-5 mb-5 pb-5">
         <Col lg="5">
           <h2 className="intro">Precisely you</h2>
         </Col>
