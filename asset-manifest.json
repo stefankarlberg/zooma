@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/zooma/static/css/main.69ccc2d3.chunk.css",
-    "main.js": "/zooma/static/js/main.345224f5.chunk.js",
-    "main.js.map": "/zooma/static/js/main.345224f5.chunk.js.map",
+    "main.css": "/zooma/static/css/main.30d8548a.chunk.css",
+    "main.js": "/zooma/static/js/main.71def305.chunk.js",
+    "main.js.map": "/zooma/static/js/main.71def305.chunk.js.map",
     "runtime-main.js": "/zooma/static/js/runtime-main.e7abe828.js",
     "runtime-main.js.map": "/zooma/static/js/runtime-main.e7abe828.js.map",
     "static/css/2.0624914a.chunk.css": "/zooma/static/css/2.0624914a.chunk.css",
     "static/js/2.35fc8611.chunk.js": "/zooma/static/js/2.35fc8611.chunk.js",
     "static/js/2.35fc8611.chunk.js.map": "/zooma/static/js/2.35fc8611.chunk.js.map",
     "index.html": "/zooma/index.html",
-    "precache-manifest.7216e53b8e041cc204e59f04c4ee3349.js": "/zooma/precache-manifest.7216e53b8e041cc204e59f04c4ee3349.js",
+    "precache-manifest.66f3c81d3b7f2947bfec060027fcc7f9.js": "/zooma/precache-manifest.66f3c81d3b7f2947bfec060027fcc7f9.js",
     "service-worker.js": "/zooma/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/zooma/static/css/2.0624914a.chunk.css.map",
-    "static/css/main.69ccc2d3.chunk.css.map": "/zooma/static/css/main.69ccc2d3.chunk.css.map",
+    "static/css/main.30d8548a.chunk.css.map": "/zooma/static/css/main.30d8548a.chunk.css.map",
     "static/media/Serious-womanBW.jpg": "/zooma/static/media/Serious-womanBW.383ad926.jpg",
     "static/media/arrow.svg": "/zooma/static/media/arrow.dab89531.svg",
     "static/media/index.css": "/zooma/static/media/bg_image.6fa566ba.png",
     "static/media/blog.png": "/zooma/static/media/blog.ce45736d.png",
-    "static/media/fill.svg": "/zooma/static/media/fill.2263b97a.svg",
+    "static/media/fill2.svg": "/zooma/static/media/fill2.36ab5637.svg",
     "static/media/logo.svg": "/zooma/static/media/logo.25bf045c.svg",
-    "static/media/trekanten.svg": "/zooma/static/media/trekanten.efd3289f.svg"
+    "static/media/trekanten2.svg": "/zooma/static/media/trekanten2.4efea17b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e7abe828.js",
     "static/css/2.0624914a.chunk.css",
     "static/js/2.35fc8611.chunk.js",
-    "static/css/main.69ccc2d3.chunk.css",
-    "static/js/main.345224f5.chunk.js"
+    "static/css/main.30d8548a.chunk.css",
+    "static/js/main.71def305.chunk.js"
   ]
 }
