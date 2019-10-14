@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'reactstrap';
 import serious from '../Serious-womanBW.jpg';
-import trekant from '../trekanten2.svg';
+import trekant from '../trekanten3.png';
 import fill from '../fill2.svg';
 
 const LastSection = (props) => {
@@ -20,6 +20,7 @@ const LastSection = (props) => {
           backgroundRepeat: 'no-repeat',
         }}>
         </div>
+        <div className="last-section-bgcolor"></div>
       </div>     
       <Container className="last-section-container"> 
         <div className="row last-section-row">

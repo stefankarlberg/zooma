@@ -14,6 +14,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
+  import menu from '../menu.svg';
 
 const Menu = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +28,7 @@ const Menu = (props) => {
 
       <Navbar expand="md" className="nav-background-lg">
         <NavbarBrand className="nav-logo" href="/">COMPANY</NavbarBrand>
+      
         
        
 
