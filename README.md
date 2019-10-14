@@ -1,3 +1,13 @@
+# [WIP] Frontend Assignment
+Mission: Build a site after Figma prototype.
+
+## Still to do:
+
+### 1. Multilanguage
+### 2. Typograhpy
+### 3. SEO
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
