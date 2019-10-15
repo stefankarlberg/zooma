@@ -26,10 +26,15 @@ h2{
   text-align:left;
   }
 
+.container-fluid-zooma {
+  display: flex !important;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 .nav-container {
   position: absolute;
   width: 100%;
-  position: absolute;
 }
 
 .nav-menu-center {
@@ -243,12 +248,8 @@ li.nav-item.nav-li-lg-contact a:hover {
 
 /* Header */
 
-.jumbotron{
-  border-radius: 0rem !important;
-  height:720px;
-}
 
-.jumbotron-title {
+.hero-title {
   font-family: Playfair Display;
   font-style: italic;
   font-weight: normal;
@@ -260,7 +261,8 @@ li.nav-item.nav-li-lg-contact a:hover {
   color: #FFFFFF;
   width: 736px;
   text-align: left;
-  margin-top: 28%;
+
+  
 }
 
 /* Intro */
@@ -418,17 +420,37 @@ position: absolute;
     font-size: 18px;
   }
 
-  .jumbotron{
-    background-image: url('bg_image.png');
-    height:345px;
-    background-position:  50% 50%;
+  .container-fluid-zooma {
+    padding-left:30px;
+    padding-right:30px;
+    margin-left:auto;
+    margin-right:auto;
+    transition: ease all .5s;
+    width: 100%;
   }
 
-  .jumbotron-title {
-    font-size: 36px;
-    width: 80%;
-    margin-top: 38%;
-}
+  .hero {
+    background-image: url("bg_image_zooma.png");
+    height: 515px;
+    background-position: 49% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: ease all .5s;
+  }
+
+  .hero-title {
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 130%;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.02em;
+    margin-top: 222px;
+    transition: ease all .5s;
+    width:282px;
+  }
 
   .last-section-image{
     height:190px;
@@ -460,16 +482,37 @@ position: absolute;
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
 
-  .jumbotron {
+  .container-fluid-zooma {
+    padding-left:30px;
+    padding-right:30px;
+    margin-left:auto;
+    margin-right:auto;
+    transition: ease all .5s;
+    width: 100%;
+  }
+  
+
+  .hero {
+    background-image: url("bg_image_zooma.png");
     height: 515px;
-    background-position: 47% 50%;
-    background-size: 210%;
+    background-position: 70% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: ease all .5s;
   }
 
-  .jumbotron-title {
-    font-size: 55px;
-    width: 83%;
-    margin-top: 38%;
+  .hero-title {
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 130%;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.02em;
+    margin-top: 222px;
+    transition: ease all .5s;
+    width:282px;
   }
 
   .last-section-image{
@@ -500,6 +543,17 @@ position: absolute;
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
+ 
+
+  .container-fluid-zooma {
+    padding-left:64px;
+    padding-right:64px;
+    margin-left:auto;
+    margin-right:auto;
+    transition: ease all .5s;
+    width: 100%;
+  }
+
   h2.intro {
     font-size: 40px;
     margin-bottom: 20px;
@@ -509,18 +563,28 @@ position: absolute;
     font-size: 20px;
   }
 
-  .jumbotron {
-    background-image: url(/static/media/bg_image.6fa566ba.png);
+  .hero {
+    background-image: url("bg_image_zooma.png");
     height: 912px;
-    background-position: 68% 17%;
+    background-position: 70% 50%;
     background-size: cover;
+    background-repeat: no-repeat;
+    transition: ease all .5s;
 }
 
-  .jumbotron-title {
-    font-size: 62px;
-    width: 100%;
-    margin-top: 70%;
-}
+  .hero-title {
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 130%;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.02em;
+    margin-top: 626px;
+    transition: ease all .5s;
+    width:672px;
+  }
 
   .section_top_padding {
     padding-top: 70px !important;
@@ -587,22 +651,39 @@ position: absolute;
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
+  .container-fluid-zooma {
+    padding-left:64px;
+    padding-right:64px;
+    margin-left:auto;
+    margin-right:auto;
+    transition: ease all .5s;
+    width: 100%;
+  }
+
   h2.intro {
     font-size: 48px;
   }
 
-
-  .jumbotron {
-    background-image: url(/static/media/bg_image.6fa566ba.png);
-    height: 720px;
-    background-position: 68% 17%;
+  .hero {
+    background-image: url("bg_image_zooma.png");
+    height:720px;
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
   }
 
-.jumbotron-title {
-  font-size: 72px;
-  width: 84%;
-  margin-top: 33%;
+  .hero-title {
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 130%;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.02em;
+    margin-top: 386px;
+    transition: ease all .5s;
+    width:736px;
   }
 
   h3.blog {
@@ -660,7 +741,14 @@ position: absolute;
 }
 
 /*  Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) { 
+
+  .container-fluid-zooma {
+    margin-left:auto;
+    margin-right:auto;
+    width: 1120px !important;
+  }
+}
 
 
 

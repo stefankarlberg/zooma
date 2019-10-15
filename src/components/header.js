@@ -1,21 +1,14 @@
 import React from 'react';
-import { Jumbotron, Button } from 'reactstrap';
-import bg from '../bg_image2.png';
+import { Jumbotron } from 'reactstrap';
+import bg from '../bg_image_desktop.png';
 
 const Header = (props) => {
   return (
-    <div>
-      <Jumbotron style={{  
-        backgroundImage: `url(${bg})`,
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-      }}>
-        <div className="container">
-          <h1 className="jumbotron-title">Precision is calculated fascination</h1>
+      <div className="hero">
+         <div className="container-fluid-zooma">
+            <h1 className="hero-title">Precision is calculated fascination</h1>
         </div>
-      </Jumbotron>
-    </div>
+      </div>
   );
 };
 

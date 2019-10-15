@@ -10,12 +10,12 @@ import LastSection from './components/last_section.js'
 function App() {
   return (
     <div className="App">
-      <Menu/>
-      <Header/>
-      <Intro/>
-      <Blog/>
-      <LastSection/>
-    </div>
+        <Menu/>
+        <Header/>
+        <Intro/>
+        <Blog/>
+        <LastSection/>
+      </div>
   );
 }
 
