@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/zooma/precache-manifest.3d058805a52982cba221904a1460c8db.js"
+  "/zooma/precache-manifest.7e17d0c89f8bd53eb66c9ac74a8f001b.js"
 );
 
 self.addEventListener('message', (event) => {
