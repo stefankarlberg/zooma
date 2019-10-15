@@ -26,11 +26,27 @@ h2{
   text-align:left;
   }
 
+/* Manipulates Bootstrap grid to be consistent according to Feedback. */
+
 .container-fluid-zooma {
   display: flex !important;
   margin-left:auto;
   margin-right:auto;
 }
+
+.row > .col,
+    .row > [class*="col-"] {
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 0px !important;
+      margin-left: 0px !important;
+      width:100%;
+  }
 
 .nav-container {
   position: absolute;
@@ -71,6 +87,12 @@ h2{
 .navbar-toggler-icon {
   color: rgb(208, 138, 32) !important;
   background-image: url("menu.svg") !important;
+}
+
+.close
+ {
+  color: rgb(208, 138, 32) !important;
+  background-image: url("close.svg") !important;
 }
 
 .nav-mob {
@@ -292,7 +314,7 @@ text-align:left;
 /* Intro */
 
 .blog-image {
-  height:218px;
+height:218px;
  background:red;
 }
 
@@ -301,11 +323,21 @@ text-align:left;
 .blog-section {
 background: #F2F2F2;
 }
-.blog-row{
-  padding-top:70px;
-  padding-bottom:70px;
 
+.blog-row{
+padding-top:70px;
+padding-bottom:70px;
 }
+
+.blog-no-padding-left {
+padding-left:0px !important;
+}
+
+.blog-no-padding-right {
+  padding-right:0px !important;
+  }
+  
+
 .card-blog{
   border:0px !important;
   border-radius:0px !important;
@@ -323,6 +355,7 @@ line-height: 140%;
 color: #1C1C21;
 text-align:left;
 margin-top:30px;
+text-transform:uppercase;
 }
 
 p.blog {
@@ -411,13 +444,31 @@ position: absolute;
 /* Extra Small devices */
 @media (min-width: 200px) { 
 
+  
+
   h2.intro {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
     font-size: 32px;
-    margin-bottom: 20px;
+    line-height: 130%;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.02em;
+    color: #1C1C21;
+    margin-top:58px;
   }
 
   p.intro {
-    font-size: 18px;
+    font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 160%;
+
+
+
+color: #6A6464;
   }
 
   .container-fluid-zooma {
@@ -495,7 +546,7 @@ position: absolute;
   .hero {
     background-image: url("bg_image_zooma.png");
     height: 515px;
-    background-position: 70% 50%;
+    background-position: 49% 50%;
     background-size: cover;
     background-repeat: no-repeat;
     transition: ease all .5s;
@@ -543,7 +594,9 @@ position: absolute;
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
- 
+ h2.intro{
+  margin-top: 0px;
+ }
 
   .container-fluid-zooma {
     padding-left:64px;
@@ -664,6 +717,38 @@ position: absolute;
     font-size: 48px;
   }
 
+  .last-section-row {
+    margin-top:-600px;
+  }
+
+  .last-section-left-col {
+    background:#dbdbdb;
+    padding:0px !important;
+    z-index: 300;
+  }
+
+  
+  h2.last-section-text{
+    width: 446px;
+    margin-top:143px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+  }
+
+  .last-section-diagonal {
+/* 
+    background-image: -webkit-linear-gradient(159deg, #c5c5c500 81%, #dbdbdb 50%), url("Serious-womanBW.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+    
+  }
+
   .hero {
     background-image: url("bg_image_zooma.png");
     height:720px;
@@ -742,6 +827,8 @@ position: absolute;
 
 /*  Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+
+
 
   .container-fluid-zooma {
     margin-left:auto;

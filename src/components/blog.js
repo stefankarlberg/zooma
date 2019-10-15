@@ -8,7 +8,7 @@ const Blog = (props) => {
     <div className="blog-section">
       <div className="container-fluid-zooma">
       <Row className="blog-row">
-        <Col md="12" lg="4">
+        <Col className="px-0 pl-lg-0 pr-lg-3 mb-5" md="12" lg="4">
           <div className="card h-100 card-body card-blog">
             <div className="blog-image float-md-left" 
               style={{  
@@ -19,14 +19,14 @@ const Blog = (props) => {
               }}>
             </div>
             <div className="float-right card-info">
-              <h3 className="blog">STAY COMFORTABLE</h3>
+              <h3 className="blog">Stay comfortable</h3>
               <p className="blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
               <div className="blog-space"></div>
-              <div className="blog-read-more"><a href="#"><img src={arrow} className="button_arrow" ></img>GO TO STAY COMFORTABLE</a></div>
+              <div className="blog-read-more"><a href="#"><img src={arrow} className="button_arrow" ></img>Go stay comfortable</a></div>
             </div>
           </div>
         </Col>
-        <Col md="12" lg="4">
+        <Col className="px-0 px-lg-3 mb-5" md="12" lg="4">
           <div className="card h-100 card-body card-blog">
             <div className="blog-image float-md-left" 
               style={{  
@@ -37,14 +37,14 @@ const Blog = (props) => {
               }}>
             </div>
             <div className="float-right card-info">
-              <h3 className="blog">PRIORITIZE BOTH YOUR EYES AND YOUR BACK</h3>
+              <h3 className="blog">Prioritize both your eyes and your back</h3>
               <p className="blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
               <div className="blog-space"></div>
-              <div className="blog-read-more"><a href="#"><img src={arrow} className="button_arrow" ></img>GO TO BETTER VISION</a></div>
+              <div className="blog-read-more"><a href="#"><img src={arrow} className="button_arrow" ></img>Go to better vision</a></div>
             </div>
           </div>
         </Col>
-        <Col md="12" lg="4">
+        <Col className="px-0 pl-lg-3 pr-lg-0 mb-5" md="12" lg="4">
           <div className="card h-100 card-body card-blog">
             <div className="blog-image float-md-left" 
               style={{  
@@ -55,10 +55,10 @@ const Blog = (props) => {
               }}>
             </div>
             <div className="float-right card-info">
-              <h3 className="blog">HEALTHIER EYES</h3>
+              <h3 className="blog">Healthier eyes</h3>
               <p className="blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
               <div className="blog-space"></div>
-              <div className="blog-read-more"><a href="#"><img src={arrow} className="button_arrow" ></img>GO TO HEALTHIER EYES</a></div>
+              <div className="blog-read-more"><a href="#"><img src={arrow} className="button_arrow" ></img>Go to healthier eyes</a></div>
             </div>
           </div>
         </Col>

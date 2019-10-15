@@ -5,11 +5,11 @@ const Intro = (props) => {
   return (
     <div className="container-fluid-zooma">
       <Row className="mt-md-5 pt-md-5 mb-5 pb-5">
-        <Col lg="5">
+        <Col className="pl-0 pr-0" lg="5">
           <h2 className="intro">Precisely you</h2>
         </Col>
-        <Col lg="7">
-          <p className="intro">
+        <Col lg="7" className="px-0">
+          <p className="intro mt-3">
             .It is time you started to see things clearly again and focus on yourself. ‘’Yourself’’ meaning your eyes, your look, and your vision. 
           </p>
           <p className="intro">
