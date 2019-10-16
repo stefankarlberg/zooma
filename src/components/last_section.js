@@ -7,66 +7,75 @@ import fill from '../fill2.svg';
 class LastSection extends React.Component {
   constructor(props){
     super(props)
-    this.diagonal = React.createRef();
+    this.state = { height: 0 };
+    this.updateHeight = this.updateHeight.bind(this);
   }
   
-  
-
-  componentDidMount () {
-    let rcol = this.diagonal.current.offsetHeight;
-    let WidthDiagonal = (rcol / 10);
-    console.log(WidthDiagonal);
+  componentDidMount() {
+    this.updateHeight();
+    window.addEventListener("resize", this.updateHeight);
+  }
+ 
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateHeight);
+  }
+ 
+  componentDidUpdate() {
+    this.updateHeight();
+  }
+ 
+  updateHeight() {
+    if (this.state.height != this.div.clientHeight)
+      this.setState({ height: this.div.clientHeight })
+      console.log(this.state.height)
   }
 
+ 
+ 
   render () {
-    const WidthDiagonal = 60;
-    const rcol = 500;
+    const adjustHeight = this.state.height + 1;
+    
     return (
       <div>
-      {/* <div className="last-section-image" style={{  
+      <div className="last-section-image" style={{  
         backgroundImage: `url(${serious})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
+        height: `${this.state.height }px`,
       }}>
         <div className="last-section-fill" style={{  
           backgroundImage: `url(${fill})`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
+          height: `${this.state.height }px`,
         }}>
         </div>
-        <div className="last-section-bgcolor"></div>
-      </div>   */}
-      <div className="container-fluid-zooma">
+      </div>  
+      <div className="container-fluid-zooma last-section-bg">
           
-     <div ref={this.diagonal} className="row last-section-row">
-            <div className="col-5 last-section-left-col ml-0">
-              <h2 className="last-section-text">Add a touch as precise as personal</h2>
-              <p className="intro last-w mt-5 ml-0">
-              Combine functionality with individuality by choosing the right frame for your face. Personalize your look, from classic and timeless designs to modern cool.
-              Combine functionality with individuality by choosing the right frame for your face. Personalize your look, from classic and timeless designs to modern cool.
-              Combine functionality with individuality by choosing the right frame for your face. Personalize your look, from classic and timeless designs to modern cool.
-              Combine functionality with individuality by choosing the right frame for your face. Personalize your look, from classic and timeless designs to modern cool.
-           
-              </p>
-            </div>
-            <div className="col-7 d-sm-none d-lg-block last-section-diagonal" style={{  
-          backgroundImage: `-webkit-linear-gradient(159deg, #c5c5c500 ${WidthDiagonal}%, #dbdbdb 50%), url(${serious})`,
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-        }}>
-            </div>
-          </div>
+      <div ref={ div => { this.div = div; } } className="row last-section-row" 
+        style={{  
+          marginTop: `-${this.state.height }px`,
+        }}
+        >
+        <div className="col-lg-5 last-section-left-col ml-0 pl-0 pr-0">
+          <h2 className="last-section">Add a touch as precise as personal</h2>
+          <p className="last-section last-w">
+          Combine functionality with individuality by choosing the right frame for your face. Personalize your look, from classic and timeless designs to modern cool.
+        
+          </p>
+        </div>
+        <div className="col-7 d-none d-lg-block last-section-diagonal">
+        </div>
+      </div>
 
       </div>
     </div>
     )
   }
 }
-
-
 
 
 export default LastSection;

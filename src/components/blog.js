@@ -8,7 +8,7 @@ const Blog = (props) => {
     <div className="blog-section">
       <div className="container-fluid-zooma">
       <Row className="blog-row">
-        <Col className="px-0 pl-lg-0 pr-lg-3 mb-5" md="12" lg="4">
+        <Col className="px-0 pl-lg-0 pr-lg-3 mb-4" md="12" lg="4">
           <div className="card h-100 card-body card-blog">
             <div className="blog-image float-md-left" 
               style={{  
@@ -26,7 +26,7 @@ const Blog = (props) => {
             </div>
           </div>
         </Col>
-        <Col className="px-0 px-lg-3 mb-5" md="12" lg="4">
+        <Col className="px-0 px-lg-3 mb-4" md="12" lg="4">
           <div className="card h-100 card-body card-blog">
             <div className="blog-image float-md-left" 
               style={{  
@@ -44,7 +44,7 @@ const Blog = (props) => {
             </div>
           </div>
         </Col>
-        <Col className="px-0 pl-lg-3 pr-lg-0 mb-5" md="12" lg="4">
+        <Col className="px-0 pl-lg-3 pr-lg-0 mb-4" md="12" lg="4">
           <div className="card h-100 card-body card-blog">
             <div className="blog-image float-md-left" 
               style={{  

@@ -10,11 +10,8 @@ import {
   Container, 
   Row, 
   Col,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
-  import menu from '../menu.svg';
+ } from 'reactstrap';
+ 
 
 const Menu = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,19 +20,22 @@ const Menu = (props) => {
   const toggle = () => setIsOpen(!isOpen);
   const language = () => setIsSwedish(!isSwedish)
 
-  return (
-    <div className="nav-container">
+  
 
+  return (
+
+    <div onClick={toggle} className= {`${isOpen ? "app-overlay" : ""}`} >
+    
+    <div className="nav-container">
       <Navbar expand="md" className="nav-background-lg">
         <NavbarBrand className="nav-logo" href="/">COMPANY</NavbarBrand>
       
-        
-       
-
+  
            {/* Mobile */}   
-         
-          <NavbarToggler onClick={toggle} className="ml-auto"/>
-            <Collapse isOpen={isOpen} className="nav-collapse nav-mob" navbar>
+          
+          <NavbarToggler 
+            onClick={toggle} className= {`${isOpen ? "navbar-toggler-icon_sk-close" : "navbar-toggler-icon_sk"}`} data-toggle="collapse" />
+            <Collapse isOpen={isOpen} className="nav-collapse nav-mob active" navbar>
               <Nav className="ml-auto mr-auto d-md-none" navbar>
                 <NavItem className="nav-li-sm">
                   <NavLink className="nav-menu-item-sm" href="http://www.zooma.se">Overview</NavLink>
@@ -110,6 +110,7 @@ const Menu = (props) => {
       </div>
       </Navbar>
 
+    </div>
     </div>
   );
 }

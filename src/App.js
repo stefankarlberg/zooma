@@ -15,7 +15,7 @@ function App() {
         <Intro/>
         <Blog/>
         <LastSection/>
-      </div>
+        </div>
   );
 }
 
