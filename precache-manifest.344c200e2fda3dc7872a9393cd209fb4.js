@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "da9a8e88e640d1c2becd2f2032e16e10",
+    "revision": "18056ab90e66f9bc107f98c6b62c5fd5",
     "url": "/zooma/index.html"
   },
   {
@@ -8,20 +8,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zooma/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "d0ef25a4dc090c98d612",
-    "url": "/zooma/static/css/main.afad71cd.chunk.css"
+    "revision": "124524ce554b1bba53bc",
+    "url": "/zooma/static/css/main.e8daf038.chunk.css"
   },
   {
     "revision": "428cf09a170387962bf6",
     "url": "/zooma/static/js/2.aea6f5d9.chunk.js"
   },
   {
-    "revision": "d0ef25a4dc090c98d612",
-    "url": "/zooma/static/js/main.87ff29b4.chunk.js"
+    "revision": "124524ce554b1bba53bc",
+    "url": "/zooma/static/js/main.b93fc25a.chunk.js"
   },
   {
     "revision": "9bc3f8fb1d85b50cd5d8",
     "url": "/zooma/static/js/runtime-main.e7abe828.js"
+  },
+  {
+    "revision": "30664ac5b19ce3716653a2d0ab93c079",
+    "url": "/zooma/static/media/HamburgerClose.30664ac5.svg"
+  },
+  {
+    "revision": "79baa92c5f86ec200df769ce55829f9e",
+    "url": "/zooma/static/media/Mask.79baa92c.svg"
   },
   {
     "revision": "383ad926d2f6f914821fd948d55fc24d",
@@ -42,10 +50,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ce45736d615793996a5a76ca1ed29b45",
     "url": "/zooma/static/media/blog.ce45736d.png"
-  },
-  {
-    "revision": "ce72c94634cfd8fadbd9088432de7885",
-    "url": "/zooma/static/media/close.ce72c946.svg"
   },
   {
     "revision": "36ab5637e8f46aa98054c74670ae60ac",
