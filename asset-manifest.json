@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/zooma/static/css/main.1fe8bdf0.chunk.css",
-    "main.js": "/zooma/static/js/main.bd6afbbe.chunk.js",
-    "main.js.map": "/zooma/static/js/main.bd6afbbe.chunk.js.map",
+    "main.js": "/zooma/static/js/main.0d6f0eeb.chunk.js",
+    "main.js.map": "/zooma/static/js/main.0d6f0eeb.chunk.js.map",
     "runtime-main.js": "/zooma/static/js/runtime-main.e7abe828.js",
     "runtime-main.js.map": "/zooma/static/js/runtime-main.e7abe828.js.map",
     "static/css/2.0624914a.chunk.css": "/zooma/static/css/2.0624914a.chunk.css",
     "static/js/2.b25db620.chunk.js": "/zooma/static/js/2.b25db620.chunk.js",
     "static/js/2.b25db620.chunk.js.map": "/zooma/static/js/2.b25db620.chunk.js.map",
     "index.html": "/zooma/index.html",
-    "precache-manifest.b869ad4dc46f56c790f50f2bf69d03dd.js": "/zooma/precache-manifest.b869ad4dc46f56c790f50f2bf69d03dd.js",
+    "precache-manifest.d559ecfde41ee62574ec67953ec15675.js": "/zooma/precache-manifest.d559ecfde41ee62574ec67953ec15675.js",
     "service-worker.js": "/zooma/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/zooma/static/css/2.0624914a.chunk.css.map",
     "static/css/main.1fe8bdf0.chunk.css.map": "/zooma/static/css/main.1fe8bdf0.chunk.css.map",
@@ -26,6 +26,6 @@
     "static/css/2.0624914a.chunk.css",
     "static/js/2.b25db620.chunk.js",
     "static/css/main.1fe8bdf0.chunk.css",
-    "static/js/main.bd6afbbe.chunk.js"
+    "static/js/main.0d6f0eeb.chunk.js"
   ]
 }
