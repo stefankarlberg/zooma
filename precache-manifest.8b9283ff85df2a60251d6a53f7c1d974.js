@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e1b7d4e986193ffc1628ae2f5100a7ca",
+    "revision": "e660e742783b9607d92efdcf8d2a06fe",
     "url": "/zooma/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zooma/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "350a9df80e665cd387fd",
-    "url": "/zooma/static/css/main.1fe8bdf0.chunk.css"
+    "revision": "9d088563227d110f20eb",
+    "url": "/zooma/static/css/main.1edb0c70.chunk.css"
   },
   {
     "revision": "e203372d43fdfa23f170",
     "url": "/zooma/static/js/2.b25db620.chunk.js"
   },
   {
-    "revision": "350a9df80e665cd387fd",
-    "url": "/zooma/static/js/main.0d6f0eeb.chunk.js"
+    "revision": "9d088563227d110f20eb",
+    "url": "/zooma/static/js/main.6aece979.chunk.js"
   },
   {
     "revision": "9bc3f8fb1d85b50cd5d8",
