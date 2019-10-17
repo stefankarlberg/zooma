@@ -10,6 +10,7 @@ import {
   Row, 
   Col,
  } from 'reactstrap';
+ import { LanguageContext } from '../context/LanguageContext.js';
 
 
 
@@ -23,10 +24,14 @@ import {
     };
   }
 
+  static contextType = LanguageContext
+
    // Adds an event listener when the component is mount.
    componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
   }
+
+
 
   // Remove the event listener when the component is unmount.
   componentWillUnmount() {
@@ -34,7 +39,7 @@ import {
   }
 
 
-   handleToggle  = () =>  {
+  handleToggle  = () =>  {
     this.setState(prevState => ({
         isOpen: !prevState.isOpen,
       }));
@@ -61,12 +66,16 @@ import {
 
 
   render() {
+   
+    const { isSwedish, setLanguage } = this.context;
+    
     return (
 
      <>
+ 
       <div onClick={this.handleToggle} className= {`${this.state.isOpen ? "app-overlay" : ""}`} />
       <div className="nav-container " />
-        <Navbar expand="md" className="nav-background-lg sticky-top md-">
+        <Navbar expand="md" className="nav-background-lg nav-sticky">
           <NavbarBrand className="nav-logo" href="/">COMPANY</NavbarBrand>
         
             {/* Mobile */}   
@@ -88,10 +97,10 @@ import {
               
           {/* Desktop */}   
           <div className="container-fluid-zooma nav-menu-center">
-            <Row className="d-none d-lg-flex nav-menu-lg-full-width">
+            <Row className="d-none d-md-flex nav-menu-md-full-width">
               <Col lg="3"></Col>
               <Col lg="6">
-                <Nav className="ml-auto mr-auto d-md-none d-lg-flex" navbar>
+                <Nav className="ml-auto mr-auto d-md-flex" navbar>
                   <NavItem className="nav-li-lg">
                     <NavLink className="nav-menu-item-lg" href="http://www.zooma.se"><span>Overview</span></NavLink>
                   </NavItem>
@@ -108,38 +117,23 @@ import {
           </div>
 
           {/* Language / Contact*/}  
-          <Nav className="d-none d-md-flex ml-auto" navbar>
-            <NavItem className="nav-li-lg">
-              <NavLink className="nav-menu-item-lg nav-menu-item-lang" href="#" ><span>EN </span></NavLink>
+          <Nav className="d-none d-md-flex ml-auto nav-lang-z-index nav-lang-ul" navbar>
+            <NavItem className="nav-li-lang">
+              <NavLink className={`${isSwedish ? "nav-lang-inactive" : "nav-lang-active"}`} href="#" onClick={setLanguage("english")}><span>EN</span></NavLink>
             </NavItem>
-            <NavItem className="nav-li-lg">
-              <NavLink className="nav-menu-item-lg nav-menu-item-lang" href="http://www.zooma.se"><span>/</span></NavLink>
+            <NavItem className="nav-li-lang">
+              <NavLink className=""><span>/</span></NavLink>
             </NavItem>
-            <NavItem className="nav-li-lg">
-              <NavLink className="nav-menu-item-lg nav-menu-item-lang" href="http://www.zooma.se"><span>SV</span></NavLink>
+            <NavItem className="nav-li-lang">
+              <NavLink className={`${isSwedish ? "nav-lang-active" : "nav-lang-inactive"}`} onClick={setLanguage("swedish")} href="#"><span>SV</span></NavLink>
             </NavItem>
             <NavItem className="nav-li-lg-contact">>
               <NavLink className="nav-menu-item-contact" href="#">KONTAKT</NavLink>
             </NavItem>
           </Nav>
         </Navbar>
+        <div className="nav-background-tablet-zooma"></div>
 
-        {/* Tablet - new row */} 
-        <Navbar expand="sm" className="d-none d-md-block d-lg-none nav-background-tablet">
-          <div className="container">
-            <Nav className="ml-auto mr-auto nav-ul-md" navbar>
-              <NavItem className="nav-li-md">
-                <NavLink className="nav-menu-item-md" href="http://www.zooma.se"><span>Overview</span></NavLink>
-              </NavItem>
-              <NavItem className="nav-li-md">
-                <NavLink className="nav-menu-item-md" href="http://www.zooma.se"><span>Testamonials</span></NavLink>
-              </NavItem>
-              <NavItem className="nav-li-md">
-                <NavLink className="nav-menu-item-md" href="http://www.zooma.se"><span>Find us</span></NavLink>
-              </NavItem>
-            </Nav>
-          </div>
-        </Navbar>
        
       </>
 

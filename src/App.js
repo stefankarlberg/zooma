@@ -1,14 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Menu from './components/nav.js'
 import Header from './components/header.js'
 import Intro from './components/intro.js'
 import Blog from './components/blog.js'
 import LastSection from './components/last_section.js'
+import LanguageContextProvider from './context/LanguageContext.js'
 
 function App() {
   return (
+    <LanguageContextProvider>
     <div className="App">
         <Menu/>
         <Header/>
@@ -16,6 +17,8 @@ function App() {
         <Blog/>
         <LastSection/>
         </div>
+        </LanguageContextProvider>
+  
   );
 }
 
