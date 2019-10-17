@@ -64,6 +64,7 @@ class LastSection extends React.Component {
           <h2 className="last-section">Add a touch as precise as personal</h2>
           <p className="last-section last-w">
           Combine functionality with individuality by choosing the right frame for your face. Personalize your look, from classic and timeless designs to modern cool.
+          Combine functionality with individuality by choosing the right frame for your face. Personalize your look, from classic and timeless designs to modern cool.
         
           </p>
         </div>
