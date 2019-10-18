@@ -23,12 +23,12 @@ class LastSection extends React.Component {
  
   componentDidUpdate() {
     this.updateHeight();
+    console.log("8 out of 10")
   }
  
   updateHeight() {
-    if (this.state.height != this.div.clientHeight)
+    if (this.state.height !== this.div.clientHeight)
       this.setState({ height: this.div.clientHeight })
-      console.log(this.state.height)
   }
 
   render () {
@@ -37,7 +37,7 @@ class LastSection extends React.Component {
     
     return (
       <div>
-      <div className="last-section-image" style={{  
+      <div title={content.last.h2} className="last-section-image" style={{  
         backgroundImage: `url(${serious})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
