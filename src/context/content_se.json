@@ -2,16 +2,18 @@
   {
     "menu": {
       "one": "Översikt",    
-      "two": "Testamonials",   
-      "three": "Find us",   
-      "four": "Contact"
+      "two": "Vittnesbörd",   
+      "three": "Finn oss",   
+      "four": "Kontakt"
     },
       "hero": {
-      "h1": "Precision is calculated fascination"
+      "h1": "Precision är kalkylerad fascination"
     },
     "intro": {
-      "h3": "Precisely you",
-      "p": "It is time you started to see things clearly again and focus on yourself. ‘’Yourself’’ meaning your eyes, your look, and your vision.\r Company frames and lenses are designed to perfectly match each other and complement your look and vision – flawlessly integrating striking aesthetics with visual excellence."
+      "h3": "Precist du",
+      "p": "Det är dags att du börjar se saker klart igen så du kan fokusera på dig själv. Och “dig själv” i detta fallet avser din ögon, ditt utseende, och din vision.",
+      "p1": "Company bågar och linser är formgivna för att passa varandra perfekt och komplettera din look och vision. Ett perfekt fusion av bländande estetik och visuell briljans."
+    
     },
     "blog": [
       {
@@ -28,7 +30,7 @@
       }
     ],
     "last": {
-      "h2": "Add a touch as precise as personal",
-      "p": "Combine functionality with individuality by choosing the right frame for your face. Personalize your look, from classic and timeless designs to modern cool. Combine functionality with individuality by choosing the right frame for your face. Personalize your look, from classic and timeless designs to modern cool."
+      "h2": "Addera en beröring lika precis som personlig",
+      "p": "Kombinera funktionalitet med individualitet genom att välja de rätta bågarna för dit anlete. Personalisera ditt utseende, från klassisk till tidlös design till modernt. Coolt."
     }
   }

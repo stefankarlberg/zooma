@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import arrow from '../arrow.svg';
 import image from '../blog.png';
 

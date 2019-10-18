@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react';
+import React, { Component } from 'react';
 import {
   Collapse,
   Navbar,
@@ -11,11 +11,6 @@ import {
   Col,
  } from 'reactstrap';
  import { LanguageContext } from '../context/LanguageContext.js';
-//  import jsonData from './content_en.json';
-//  import jsonDataSE from './content_se.json';
-
- 
-
 
 
  export default class Menu extends Component {
@@ -25,7 +20,6 @@ import {
     this.state = {
       prevScrollpos: window.pageYOffset,
       isOpen: false,
-      selectedLanguage: "swedish"
     };
   }
   
@@ -88,10 +82,10 @@ import {
                     <NavLink className="nav-menu-item-sm" href="http://www.zooma.se">{content.menu.one}</NavLink>
                   </NavItem>
                   <NavItem className="nav-li-sm">
-                    <NavLink className="nav-menu-item-sm" href="http://www.zooma.se">Testamonials</NavLink>
+                    <NavLink className="nav-menu-item-sm" href="http://www.zooma.se">{content.menu.two}</NavLink>
                   </NavItem>
                   <NavItem className="nav-li-sm">
-                    <NavLink className="nav-menu-item-sm" href="http://www.zooma.se">Find us</NavLink>
+                    <NavLink className="nav-menu-item-sm" href="http://www.zooma.se">{content.menu.three}</NavLink>
                   </NavItem>
                 </Nav>
               </Collapse>
@@ -107,10 +101,10 @@ import {
                     <NavLink className="nav-menu-item-lg" href="http://www.zooma.se"><span>{content.menu.one}</span></NavLink>
                   </NavItem>
                   <NavItem className="nav-li-lg">
-                    <NavLink className="nav-menu-item-lg" href="http://www.zooma.se"><span>Testamonials</span></NavLink>
+                    <NavLink className="nav-menu-item-lg" href="http://www.zooma.se"><span>{content.menu.two}</span></NavLink>
                   </NavItem>
                   <NavItem className="nav-li-lg">
-                    <NavLink className="nav-menu-item-lg" href="http://www.zooma.se"><span>Find us</span></NavLink>
+                    <NavLink className="nav-menu-item-lg" href="http://www.zooma.se"><span>{content.menu.three}</span></NavLink>
                   </NavItem>
                 </Nav>
               </Col>
@@ -130,7 +124,7 @@ import {
               <NavLink className={`${isSwedish ? "nav-lang-active" : "nav-lang-inactive"}`} onClick={setLanguage("swedish")} href="#"><span>SV</span></NavLink>
             </NavItem>
             <NavItem className="nav-li-lg-contact">>
-              <NavLink className="nav-menu-item-contact" href="#">KONTAKT</NavLink>
+              <NavLink className="nav-menu-item-contact" href="#">{content.menu.four}</NavLink>
             </NavItem>
           </Nav>
         </Navbar>

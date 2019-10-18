@@ -1,8 +1,7 @@
 import React from 'react';
-import { Container } from 'reactstrap';
 import serious from '../Serious-womanBW.jpg';
-import trekant from '../trekanten3.png';
 import fill from '../fill2.svg';
+import { LanguageContext } from '../context/LanguageContext.js';
 
 class LastSection extends React.Component {
   constructor(props){
@@ -10,6 +9,8 @@ class LastSection extends React.Component {
     this.state = { height: 0 };
     this.updateHeight = this.updateHeight.bind(this);
   }
+
+  static contextType = LanguageContext
   
   componentDidMount() {
     this.updateHeight();
@@ -30,10 +31,9 @@ class LastSection extends React.Component {
       console.log(this.state.height)
   }
 
- 
- 
   render () {
-    const adjustHeight = this.state.height + 1;
+   
+    const { content } = this.context;
     
     return (
       <div>
@@ -61,11 +61,9 @@ class LastSection extends React.Component {
         }}
         >
         <div className="col-lg-5 last-section-left-col ml-0 pl-0 pr-0">
-          <h2 className="last-section">Add a touch as precise as personal</h2>
+          <h2 className="last-section">{content.last.h2}</h2>
           <p className="last-section last-w">
-          Combine functionality with individuality by choosing the right frame for your face. Personalize your look, from classic and timeless designs to modern cool.
-          Combine functionality with individuality by choosing the right frame for your face. Personalize your look, from classic and timeless designs to modern cool.
-        
+          {content.last.p}
           </p>
         </div>
         <div className="col-7 d-none d-lg-block last-section-diagonal">

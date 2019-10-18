@@ -1,26 +1,36 @@
-import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import React, { Component }  from 'react';
+import { Row, Col } from 'reactstrap';
+import { LanguageContext } from '../context/LanguageContext.js';
 
-const Intro = (props) => {
-  return (
-    <div className="container-fluid-zooma">
+
+class Intro extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {  }
+  }
+
+  static contextType = LanguageContext
+  
+  render() { 
+    const { content } = this.context;
+    
+    return ( 
+      <div className="container-fluid-zooma">
       <Row className="mt-md-5 pt-md-5 mb-5 pb-5">
         <Col className="pl-0 pr-0" lg="5">
-          <h2 className="intro">Precisely you</h2>
+          <h2 className="intro">{content.intro.h3}</h2>
         </Col>
         <Col lg="7" className="px-0">
           <p className="intro mt-3">
-            .It is time you started to see things clearly again and focus on yourself. ‘’Yourself’’ meaning your eyes, your look, and your vision. 
+          {content.intro.p}
           </p>
           <p className="intro">
-            Company frames and lenses are designed to perfectly match each other and complement your look and vision – flawlessly integrating striking aesthetics with visual excellence.
-          </p>
+          {content.intro.p1}</p>
         </Col> 
       </Row>
     </div>
-  );
+     );
+  }
 }
-
+ 
 export default Intro;
-
-
