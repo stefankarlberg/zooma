@@ -5,7 +5,9 @@ Deployed site at https://stefankarlberg.github.io/zooma/
 
 ## Still to do:
 
-### 1. SEO
+1. SEO
+
+## Screenshots of Figma:
 
 <img width="565" alt="Screenshot 2019-10-14 10 46 40" src="https://user-images.githubusercontent.com/48205922/67092038-8a652a00-f1ae-11e9-94fe-7779a5be4d74.png">
 <img width="1143" alt="Screenshot 2019-10-14 10 46 30" src="https://user-images.githubusercontent.com/48205922/67092039-8a652a00-f1ae-11e9-94f1-518f425f4aef.png">
