@@ -1,4 +1,6 @@
 import React, {createContext, Component} from 'react';
+import jsonData from './content_en.json';
+ import jsonDataSE from './content_se.json';
 
 export const LanguageContext = createContext();
 
@@ -6,6 +8,7 @@ class LanguageContextProvider extends Component {
   state = { 
     isSwedish: true,
     language: "swedish",
+    content: jsonDataSE, 
   }
 
   toggleLanguage = () => {
@@ -15,10 +18,12 @@ class LanguageContextProvider extends Component {
 
   setLanguage = (lang) => (e) => {
     this.setState({ language: lang });
-    if (lang == "swedish"){
+    if (lang === "swedish"){
       this.setState({ isSwedish: true });
+      this.setState({ content: jsonDataSE });
     } else {
       this.setState({ isSwedish: false });
+      this.setState({ content: jsonData });
     }
   }
 
@@ -33,5 +38,3 @@ class LanguageContextProvider extends Component {
 }
  
 export default LanguageContextProvider;
-
-// this.setState(prevState => ({ isSwedish: !prevState.isSwedish }));

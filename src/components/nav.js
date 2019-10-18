@@ -11,6 +11,10 @@ import {
   Col,
  } from 'reactstrap';
  import { LanguageContext } from '../context/LanguageContext.js';
+//  import jsonData from './content_en.json';
+//  import jsonDataSE from './content_se.json';
+
+ 
 
 
 
@@ -21,16 +25,17 @@ import {
     this.state = {
       prevScrollpos: window.pageYOffset,
       isOpen: false,
+      selectedLanguage: "swedish"
     };
   }
+  
 
   static contextType = LanguageContext
 
    // Adds an event listener when the component is mount.
-   componentDidMount() {
+  componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
   }
-
 
 
   // Remove the event listener when the component is unmount.
@@ -59,15 +64,12 @@ import {
     console.log('open')
 
   }
-  {
-    console.log('closed')
-  }
-  };
 
+  };
 
   render() {
    
-    const { isSwedish, setLanguage } = this.context;
+    const { content, isSwedish, setLanguage } = this.context;
     
     return (
 
@@ -83,7 +85,7 @@ import {
               <Collapse isOpen={this.state.isOpen} className="nav-collapse nav-mob active" navbar>
                 <Nav className="ml-auto mr-auto d-md-none" navbar>
                   <NavItem className="nav-li-sm">
-                    <NavLink className="nav-menu-item-sm" href="http://www.zooma.se">Overview</NavLink>
+                    <NavLink className="nav-menu-item-sm" href="http://www.zooma.se">{content.menu.one}</NavLink>
                   </NavItem>
                   <NavItem className="nav-li-sm">
                     <NavLink className="nav-menu-item-sm" href="http://www.zooma.se">Testamonials</NavLink>
@@ -102,7 +104,7 @@ import {
               <Col lg="6">
                 <Nav className="ml-auto mr-auto d-md-flex" navbar>
                   <NavItem className="nav-li-lg">
-                    <NavLink className="nav-menu-item-lg" href="http://www.zooma.se"><span>Overview</span></NavLink>
+                    <NavLink className="nav-menu-item-lg" href="http://www.zooma.se"><span>{content.menu.one}</span></NavLink>
                   </NavItem>
                   <NavItem className="nav-li-lg">
                     <NavLink className="nav-menu-item-lg" href="http://www.zooma.se"><span>Testamonials</span></NavLink>
