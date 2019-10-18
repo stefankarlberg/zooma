@@ -1,6 +1,8 @@
 # [WIP] Frontend Assignment
 Mission: Build a site after Figma prototype.
 
+Deployed site at https://stefankarlberg.github.io/zooma/
+
 ## Still to do:
 
 ### 1. SEO
