@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8830fdaf661001d5081002daf1148273",
+    "revision": "f18e5333f6eb7fb33d516966fd874d92",
     "url": "/zooma/index.html"
   },
   {
-    "revision": "3d34bb0c6547e3e0e731",
+    "revision": "dcbfacbc99307af04498",
     "url": "/zooma/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "e6546cf3aa23e55d1525",
+    "revision": "b4ddd99e7a632cbaa7f0",
     "url": "/zooma/static/css/main.d5c23cdf.chunk.css"
   },
   {
-    "revision": "3d34bb0c6547e3e0e731",
-    "url": "/zooma/static/js/2.e1d5c87e.chunk.js"
+    "revision": "dcbfacbc99307af04498",
+    "url": "/zooma/static/js/2.99aa5939.chunk.js"
   },
   {
-    "revision": "e6546cf3aa23e55d1525",
-    "url": "/zooma/static/js/main.dd9f99ec.chunk.js"
+    "revision": "b4ddd99e7a632cbaa7f0",
+    "url": "/zooma/static/js/main.37f9cf3f.chunk.js"
   },
   {
     "revision": "9bc3f8fb1d85b50cd5d8",
@@ -38,10 +38,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "dab89531c380dd5044da3c324b54facc",
     "url": "/zooma/static/media/arrow.dab89531.svg"
-  },
-  {
-    "revision": "69ce9ba1780f2c42d515213c0e05ff7f",
-    "url": "/zooma/static/media/bg_image_desktop.69ce9ba1.png"
   },
   {
     "revision": "4eea16263c61b4364bbb9a082ff01208",
