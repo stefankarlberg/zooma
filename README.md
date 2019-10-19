@@ -1,11 +1,18 @@
 # [WIP] Frontend Assignment
 Mission: Build a site after Figma prototype.
 
+Deployed site at https://stefankarlberg.github.io/zooma/
+
 ## Still to do:
 
-### 1. Multilanguage
-### 2. Typograhpy
-### 3. SEO
+1. SEO
+
+## Screenshots of Figma:
+
+<img width="565" alt="Screenshot 2019-10-14 10 46 40" src="https://user-images.githubusercontent.com/48205922/67092038-8a652a00-f1ae-11e9-94fe-7779a5be4d74.png">
+<img width="1143" alt="Screenshot 2019-10-14 10 46 30" src="https://user-images.githubusercontent.com/48205922/67092039-8a652a00-f1ae-11e9-94f1-518f425f4aef.png">
+<img width="310" alt="Screenshot 2019-10-14 10 46 13" src="https://user-images.githubusercontent.com/48205922/67092040-8a652a00-f1ae-11e9-9be4-c69b6d650a31.png">
+<img width="946" alt="Screenshot 2019-10-14 10 46 03" src="https://user-images.githubusercontent.com/48205922/67092041-8afdc080-f1ae-11e9-9fa1-8e2f2ccf84ea.png">
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
