@@ -33,8 +33,6 @@ class LastSection extends React.Component {
       this.setState({ height: this.div.clientHeight })
   }
 
-  
-
   updateHeightFirst() {
     if (this.state.height !== this.div.clientHeight);
       let initialheight =  this.div.clientHeight + 143
