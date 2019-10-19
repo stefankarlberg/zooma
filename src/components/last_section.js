@@ -13,8 +13,9 @@ class LastSection extends React.Component {
   static contextType = LanguageContext
   
   componentDidMount() {
-    this.updateHeight();
+    this.updateHeightFirst();
     window.addEventListener("resize", this.updateHeight);
+    console.log(this.state.height)
   }
  
   componentWillUnmount() {
@@ -23,12 +24,21 @@ class LastSection extends React.Component {
  
   componentDidUpdate() {
     this.updateHeight();
-    console.log("8 out of 10")
+    console.log(this.state.height)
+   
   }
  
   updateHeight() {
     if (this.state.height !== this.div.clientHeight)
       this.setState({ height: this.div.clientHeight })
+  }
+
+  
+
+  updateHeightFirst() {
+    if (this.state.height !== this.div.clientHeight);
+      let initialheight =  this.div.clientHeight + 143
+      this.setState({ height: initialheight})
   }
 
   render () {
